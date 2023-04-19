@@ -9,6 +9,11 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 const me = {
+  firstName: 'Michael',
+  lastName: 'Otto',
+  hasSiblings: true,
+  shoeCount: 6,
+  favoriteFoods: ['Burritos', 'Steak', 'Stir-Fry', 'Cheesey Potatoes']
   // TODO - add properties here
 };
 console.log('A little about me:', me);
@@ -19,6 +24,9 @@ console.log('A little about me:', me);
     created above to set its value. 
   - Console.log fullName
 */
+let fullName = me.firstName + ' ' + me.lastName;
+
+console.log(fullName)
 
 
 
@@ -26,7 +34,9 @@ console.log('A little about me:', me);
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-
+const lastItem=me.favoriteFoods[me.favoriteFoods.length - 1]
+console.log(me.favoriteFoods[0])
+console.log(lastItem)
 
 
 /* 4. Change a property of an existing object.
@@ -35,7 +45,9 @@ console.log('A little about me:', me);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
-
+console.log(me.shoeCount)
+me.shoeCount = me.shoeCount+++
+console.log(me.shoeCount)
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -43,3 +55,5 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+me.favoriteColor = "Oak Grey"
+console.log(me.favoriteColor)
